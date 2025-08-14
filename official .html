@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    DJ IKE
+  </h1>
+</body>
+</html>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ IKE — Official Site</title>
+  <meta name="description" content="Stream and download DJ IKE mixes. Contact for bookings. THIS WEBSITE DOESN'T SUPPORT VIOLENCE ❤️" />
+  <style>
+    :root{
+      --ink:#0a0a0a; --muted:#4b5563; --bg:#ffffff; --card:#ffffff; --line:#e5e7eb; --brand:#0b5fff; --brand-2:#1663ff; --accent:#111827;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    .wrap{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto}/* Background image layer */
+.backdrop{position:fixed;inset:0;background-position:center;background-size:cover;background-attachment:fixed;z-index:-2}
+.scrim{position:fixed;inset:0;background:rgba(255,255,255,.75);backdrop-filter:blur(4px);z-index:-1}
+
+/* Top Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.badge{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#fff;box-shadow:0 6px 16px rgba(11,95,255,.25)}
+.menu{display:flex;gap:8px}
+.btn{padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--accent);cursor:pointer}
+.btn.primary{border:none;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-weight:600}
+
+/* Sections */
+.container{max-width:1100px;margin:0 auto;padding:20px 16px}
+section{scroll-margin-top:76px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.hero h1{font-size:clamp(28px,5vw,56px);line-height:1.05;margin:0 0 10px}
+.tag{color:var(--muted);margin-bottom:18px}
+.card{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:20px;padding:16px}
+
+/* Mix list */
+.mix{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.mix h3{margin:0 0 4px;font-size:18px}
+.mix .meta{font-size:13px;color:var(--muted)}
+.mix-actions{display:flex;gap:8px}
+.download{display:inline-flex;align-items:center;gap:6px}
+
+audio{width:100%}
+
+/* About */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}
+.pill{display:inline-block;background:#eef2ff;color:#1e3a8a;border:1px solid #e0e7ff;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:600}
+
+/* Contact */
+.list{display:grid;gap:10px}
+.item{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}
+
+/* Footer note */
+footer{border-top:1px solid var(--line);background:rgba(255,255,255,.9)}
+.note{position:sticky;bottom:0;width:100%;text-align:center;padding:12px 16px;font-weight:700;letter-spacing:.3px;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);border-top:1px solid var(--line)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+}
+
+  </style>
+</head>
+<body>
+  <!-- Background image (you can change the URL below to another Drive/Dropbox link) -->
+  <div class="backdrop" id="bg" style="background-image:url('https://drive.google.com/uc?export=view&id=17pOGO5h3ybnVu4kdwaPwqicXs5s1l0FN');"></div>
+  <div class="scrim"></div>  <div class="wrap">
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="brand"><div class="badge">IKE</div> DJ IKE</div>
+        <div class="menu">
+          <a class="btn" href="#home">Home</a>
+          <a class="btn" href="#mixes">Mixes</a>
+          <a class="btn" href="#about">About</a>
+          <a class="btn primary" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav><!-- HOME -->
+<header id="home" class="container hero">
+  <div>
+    <h1>DJ IKE — The Vibe Controller</h1>
+    <p class="tag">Afrobeats • Amapiano • Dancehall • Hip‑Hop</p>
+    <div class="card">
+      <p style="margin:0 0 8px">Latest drop:</p>
+      <div class="mix">
+        <div>
+          <h3 id="latestTitle">Birthday Mushup Mixtape || DJ IKE</h3>
+          <div class="meta">Stream now or download for free</div>
+          <audio id="latestAudio" controls preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1RTmVDpoWwpAPT1nczgyin-jeGnN0Gs2m" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="mix-actions">
+          <a class="btn primary download" id="latestDownload" href="https://drive.google.com/uc?export=download&id=1RTmVDpoWwpAPT1nczgyin-jeGnN0Gs2m">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">What to Expect</h3>
+    <ul style="margin:8px 0 0 18px;color:var(--muted)">
+      <li>High‑energy DJ mixes, always free to stream & download</li>
+      <li>Mobile‑first design that plays nicely on any phone</li>
+      <li>Quick updates — add new mixes without editing HTML</li>
+    </ul>
+  </div>
+</header>
+
+<!-- MIXES -->
+<main id="mixes" class="container" style="padding-top:6px">
+  <h2 style="margin:8px 0 12px">Mixes</h2>
+  <div id="mixList" class="grid" style="display:grid;gap:12px"></div>
+  <div class="card" style="margin-top:8px">
+    <strong>How to add more mixes (from your phone):</strong>
+    <ol style="margin:8px 0 0 18px;color:var(--muted)">
+      <li>Upload your MP3 to Google Drive → Share → <em>Anyone with the link</em>.</li>
+      <li>Use link format: <code>https://drive.google.com/uc?export=download&id=FILE_ID</code>.</li>
+      <li>Open this file, find <code>const playlist = [ ... ]</code>, and paste new items.</li>
+    </ol>
+  </div>
+</main>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+  <h2>About DJ IKE</h2>
+  <div class="about">
+    <div class="card">
+      <span class="pill">Bio</span>
+      <p style="margin-top:10px">DJ IKE is the vibe controller, turning every party into a non‑stop wave of energy! Known for smashing Afrobeats, Amapiano, Dancehall, and Hip‑Hop into explosive mixes, he keeps the crowd on their feet from start to finish. With smooth transitions and electrifying drops, DJ IKE isn’t just playing music — he’s creating unforgettable moments. When DJ IKE is on the decks, the party never dies!</p>
+    </div>
+    <div class="card">
+      <span class="pill">Background</span>
+      <p style="margin-top:10px;color:var(--muted)">Background image is set to your Google Drive photo. You can swap it any time by changing the URL near the top of this file (look for <code>id=17pOGO5...</code>).</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <h2>Contact & Socials</h2>
+  <div class="list">
+    <div class="item"><div>WhatsApp</div><a class="btn primary" href="https://wa.me/233257604391" target="_blank" rel="noopener">Chat</a></div>
+    <div class="item"><div>Instagram: <strong>DJ IKE</strong></div><a class="btn" href="#" onclick="alert('Open Instagram and search: DJ IKE');return false;">Open</a></div>
+    <div class="item"><div>Email: <strong>bhaddexike358@gmail.com</strong></div><a class="btn" href="mailto:bhaddexike358@gmail.com">Send Email</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 0">
+    <div style="color:var(--muted)">© <span id="year"></span> DJ IKE</div>
+    <div style="font-size:13px;color:var(--muted)">Built to be free: stream & download your mixes.</div>
+  </div>
+  <div class="note">THIS WEBSITE DOESN'T SUPPORT VIOLENCE ❤️</div>
+</footer>
+
+  </div>  <script>
+    // ==== CONFIG ====
+    // Background image (change to any public JPG/PNG link)
+    document.getElementById('bg').style.backgroundImage = "url('https://drive.google.com/uc?export=view&id=17pOGO5h3ybnVu4kdwaPwqicXs5s1l0FN')";
+
+    // Playlist — add more items to show new mixes (title + direct MP3 link)
+    const playlist = [
+      { title: 'Birthday Mushup Mixtape || DJ IKE', url: 'https://drive.google.com/uc?export=download&id=1RTmVDpoWwpAPT1nczgyin-jeGnN0Gs2m' },
+      // Example placeholders — replace when you have new mixes
+      // { title: 'Nightset Vol. 2 || DJ IKE', url: 'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID' },
+      // { title: 'Amapiano Heatwave || DJ IKE', url: 'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID' },
+    ];
+
+    // Render mixes list
+    const list = document.getElementById('mixList');
+    function render(){
+      list.innerHTML = '';
+      playlist.forEach((track, i) => {
+        const row = document.createElement('div');
+        row.className = 'mix';
+        row.innerHTML = `
+          <div>
+            <h3>${track.title}</h3>
+            <div class="meta">Free stream & download</div>
+            <audio controls preload="none">
+              <source src="${track.url}" type="audio/mpeg">
+            </audio>
+          </div>
+          <div class="mix-actions">
+            <a class="btn primary download" href="${track.url}">Download</a>
+          </div>`;
+        list.appendChild(row);
+      });
+    }
+    render();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
